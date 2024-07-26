@@ -11,7 +11,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "65.2.63.152:8081"
+        NEXUS_URL = "65.1.108.96:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "LoginWebApp"
         // Jenkins credential id to authenticate to Nexus OSS
@@ -56,7 +56,7 @@ pipeline {
                         nexusArtifactUploader(
                             nexusVersion: 'nexus3',
                             protocol: 'http',
-                            nexusUrl: '65.2.63.152:8081',
+                            nexusUrl: '65.1.108.96:8081',
                             groupId: 'pom.com.ranjitswain',
                             version: 'pom.1.0-SNAPSHOT',
                             repository: 'LoginWebApp',
