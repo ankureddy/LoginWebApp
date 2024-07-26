@@ -23,7 +23,7 @@ pipeline {
         stage("Check out") {
             steps {
                 script {
-                    git credentialsId: 'Git-03', url: 'https://github.com/ankureddy/nexus-fact.git'
+                    git credentialsId: 'Git-03', url: 'https://github.com/ankureddy/LoginWebApp.git'
                 }
             }
         }
